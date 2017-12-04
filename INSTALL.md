@@ -5,7 +5,7 @@
     $ curl -sSL https://get.haskellstack.org/ | sh
     $ stack setup
 
-Now clone this repo and build the documentation:
+Clone this repo and **build the documentation**:
 
     $ git clone https://github.com/instinctive/edu-wumpus.git
     $ cd edu-wumpus
