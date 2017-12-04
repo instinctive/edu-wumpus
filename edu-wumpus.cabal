@@ -1,6 +1,6 @@
 name:                edu-wumpus
 version:             0.1.0.0
-synopsis:            Hunt the Wumpus, a Haskell exercise
+synopsis:            Hunt the Wumpus, an exercise in learning Haskell
 homepage:            https://github.com/instinctive/edu-wumpus#readme
 license:             BSD3
 license-file:        LICENSE
