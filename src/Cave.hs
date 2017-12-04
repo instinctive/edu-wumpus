@@ -64,6 +64,16 @@ tunnels m = undefined
 --   function from 'Data.Map'.
 --   * A random number in a certain range. Use 'getRandomR' from
 --   'Control.Monad.Random.Class'.
+--
+-- Some more guidance... suppose you didn't care about the input, and
+-- were willing to just return 'cave0'. You might try this:
+--
+-- > rndCave :: MonadRandom m => CaveMap -> m Cave
+-- > rndCave _ = cave0
+--
+-- This doesn't work because you are returning a @Cave@, not @m Cave@.
+-- The type signature says that the value needs to be in the @m@ context.
+-- Does that help?
 rndCave :: MonadRandom m => CaveMap -> m Cave
 rndCave CaveMap {..} = undefined
 
