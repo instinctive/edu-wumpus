@@ -4,6 +4,7 @@ module Parse where
 
 import BasePrelude
 
+import Cave
 import Common
 
 -- | Parse a 'String' into and 'Action', returning 'Nothing' if the string does
