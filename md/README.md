@@ -1,3 +1,3 @@
 # README
 
-[Hunt the Wumpus](md/Wumpus.md)
+[Hunt the Wumpus](Wumpus.md)
