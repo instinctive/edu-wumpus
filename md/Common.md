@@ -12,7 +12,7 @@ Uncomment this line in [doctest/Main.hs](../doctest/Main.hs):
 
     -- test "src/Common.hs"
 
-Rebuild [../INSTALL.md](the documentation):
+Rebuild [the documentation](../INSTALL.md):
 
     $ cd /path/to/edu-wumpus
     $ stack haddock
