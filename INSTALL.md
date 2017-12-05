@@ -5,9 +5,12 @@
     $ curl -sSL https://get.haskellstack.org/ | sh
     $ stack setup
 
-Clone this repo and **build the documentation**:
+[Fork this repo on GitHub](https://help.github.com/articles/fork-a-repo/), so
+that others can comment on your solutions, raise issues, etc.
 
-    $ git clone https://github.com/instinctive/edu-wumpus.git
+Clone **your fork** of this repo and **build the documentation**:
+
+    $ git clone https://github.com/YOUR-GITHUB-ID/edu-wumpus.git
     $ cd edu-wumpus
     $ stack haddock
     $ ln -s `stack path --local-doc-root`
