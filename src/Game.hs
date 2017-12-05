@@ -64,13 +64,13 @@ mkGame c = undefined
 -- combine both checks into one.
 --
 -- >>> doAction triGame Quit
--- Just (Right Nothing)
+-- Just (Left Over)
 -- >>> doAction triGame (Move cave0)
 -- Nothing
 -- >>> doAction triGame (Move cave1)
 -- Just (Left Eaten)
--- >>> fmap (fmap gPlayer) <$> doAction triGame (Move cave2)
--- Just (Right (Just 2))
+-- >>> fmap gPlayer <$> doAction triGame (Move cave2)
+-- Just (Right 2)
 -- >>> doAction triGame (Shoot cave0)
 -- Nothing
 -- >>> doAction triGame (Shoot cave1)
