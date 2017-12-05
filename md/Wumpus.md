@@ -19,4 +19,5 @@ exercise module-by-module, in this order:
 
 After all modules have been completed, the game will be playable:
 
+    $ stack build
     $ stack exec wumpus-exe

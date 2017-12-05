@@ -19,3 +19,5 @@ Now you can point your browser at the Haddock documentation for this project on 
 As you proceed in this project, you will want to re-build the documentation, as more will be added:
 
     $ stack haddock
+
+[Let's get started!](md/Wumpus.md)
