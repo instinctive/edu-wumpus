@@ -37,4 +37,5 @@ that these monadic contexts are contagious. Because `rndCave` has a
 `MonadRandom` constraint, so does `mkGame`.
 
 You may want to review [the notes about `MonadRandom`](Cave.md#monadrandom),
-as well as the [Functor, Applicative, and Monad](Monad.md) refresher.
+[the notes on `RecordWildCards`](Cave.md#recordwildcards), and the [Functor,
+Applicative, and Monad](Monad.md) refresher.
