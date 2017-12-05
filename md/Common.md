@@ -18,6 +18,7 @@ Rebuild [../INSTALL.md](the documentation):
     $ stack haddock
 
 Point your browser at `/path/to/edu-wumpus/doc/index.html`.
+Check out the documentation for `Common`.
 
 ## What's going on
 
