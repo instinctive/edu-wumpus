@@ -54,7 +54,8 @@ printInvalid = undefined
 
 -- | Print a game status message.
 --
--- >>> traverse_ printMsg [Miss,Hit,Eaten]
+-- >>> traverse_ printMsg [Over,Miss,Hit,Eaten]
+-- Game over, man, game over...
 -- You missed! Unarmed and defenseless, you are Wumpus-fodder.
 -- You killed the Wumpus! The villagers laud you as a hero!
 -- You find the Wumpus! You are eaten as a tasty snack!

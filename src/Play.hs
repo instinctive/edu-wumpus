@@ -17,9 +17,7 @@ import Output
 --   * Use 'printView' to show the player's view.
 --   * Get the player action with 'getAction', and apply it to the game state.
 --     * If the player action is invalid, use 'printInvalid' and try again.
---     * If the game state is a (game-ending) message, print it (and return
---     from 'play' with @()@, ending the game.
---     * If the player quit @(Right Nothing)@, return @()@ (ending the game).
+--     * If the game state is a (game-ending) message, print it (and return).
 --     * Otherwise, repeat with the new game state.
 play :: CaveMap -> IO ()
 play c = undefined

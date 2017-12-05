@@ -6,10 +6,8 @@ import BasePrelude
 
 import Cave
 
--- * The game 'Status'
-
 -- | The game status is what gets communicated to the player from the game.
-type Status a = Maybe (Either Msg (Maybe a))
+type Status a = Maybe (Either Msg a)
 
 -- | The player's view of the game state.
 data View = View
@@ -28,7 +26,8 @@ data Action
 
 -- | Messages about changes to the game state.
 data Msg
-    = Miss  -- ^ player missed and is unarmed
+    = Over  -- ^ game over (player quit)
+    | Miss  -- ^ player missed and is unarmed
     | Hit   -- ^ player hit the wumpus and wins
     | Eaten -- ^ player is eaten by the wumpus
     deriving (Eq, Show)
