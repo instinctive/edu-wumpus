@@ -83,3 +83,5 @@ inside an appropriate context.
 But just to jump ahead, we will ultimately use this code inside the `IO`
 monad. Look a little further down that same documentation, and you will see
 that the `MonadRandom IO` instance has already been defined.
+
+See also this explanation of [Functors, Applicatives, and Monads](Monad.md).
