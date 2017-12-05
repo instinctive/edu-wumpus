@@ -2,7 +2,7 @@
 
 Let's gather the class descriptions from
 [Data.Functor](https://hackage.haskell.org/package/base-4.10.0.0/docs/Data-Functor.html),
-[Control.Applicative](https://hackage.haskell.org/package/base-4.10.0.0/docs/Control-Applicative.html,
+[Control.Applicative](https://hackage.haskell.org/package/base-4.10.0.0/docs/Control-Applicative.html),
 and
 [Control.Monad](https://hackage.haskell.org/package/base-4.10.0.0/docs/Control-Monad.html)
 in one place.
@@ -19,7 +19,7 @@ in one place.
       return :: a -> f a
 
 The meaning of `class Foo x => Bar x where ...` is that every `Bar` is a
-/Foo`. So every `Monad` is an `Applicative`, and every `Applicative` is a
+`Foo`. So every `Monad` is an `Applicative`, and every `Applicative` is a
 `Functor`.
 
 For pedagogy, I am using the operator version of `fmap`, and the flipped
@@ -84,7 +84,7 @@ contexts. It's pretty obvious how you construct a value in the `Maybe` context:
 you can just wrap it in a `Just`. But what about `IO`? I hear that's a `Monad`,
 and there's no such thing as an `IO` constructor...? Read on!
 
-** Injecting values into contexts
+## Injecting values into contexts
 
 Now for `pure` and `return`:
 
@@ -139,7 +139,7 @@ Tutorials often start with `Maybe`. Let's branch out into other contexts:
 
 Two-element tuples `(a,b)` are constructed from two types. These declarations
 say that a two-element tuple is a `Functor`, `Applicative`, or `Monad` in its
-*second* type. All the machinery of these contexts won't touch the first type.
+*second* type.
 
 Here's an example.
 
@@ -188,7 +188,7 @@ This is YUGE.
         | density > 1 = out "closed"
         | density < 1 = out "open"
         | otherwise   = out "unknown"
-      where out = ("The geometry of space is " ++)
+      where out = putStrLn.("The geometry of space is " ++)
 
 Each of the three clauses in this code are of type `IO ()`, but they are all
 *different*. The `fate` function can change the future of the computation based
@@ -200,8 +200,8 @@ This is not possible with `Functor` and `Applicative`.
 
 Function application transforms one value into another.
 
-A functor allows those transformations to happen inside a context.
+`Functor` allows those transformations to happen inside a context.
 
-An applicative also allows such computations to *accumulate* that context.
+`Applicative` also allows such computations to *accumulate* that context.
 
-A monad also allows such computations to change the shape of that context.
+`Monad` also allows such computations to change the shape of that context.
