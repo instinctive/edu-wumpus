@@ -9,14 +9,14 @@ All those comments are there to help you write the code. At the time of this
 writing:
 
     $ wc -l src/*.hs
-    399 total
+    400 total
 
 That's what's given to you. Let me run the command again for the complete
 project.
 
     $ wc -l src/*.hs
-    452 total
+    471 total
 
-So that's 53 lines of code in my completed project. Your mileage may vary.
+So that's 71 lines of code in my completed project. Your mileage may vary.
 
 The project is not huge, and I think you will learn something from it!
