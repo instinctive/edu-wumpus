@@ -1,8 +1,6 @@
 # Common
 
-Resources:
-
-* [Common.hs](../src/Common.hs)
+Code: [Common.hs](../src/Common.hs)
 
 Uncomment this line in [edu-wumpus.cabal](../edu-wumpus.cabal):
 

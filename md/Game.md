@@ -1,8 +1,6 @@
 # Game
 
-Resources:
-
-* [Game.hs](../src/Game.hs)
+Code: [Game.hs](../src/Game.hs)
 
 Uncomment this line in [edu-wumpus.cabal](../edu-wumpus.cabal):
 
